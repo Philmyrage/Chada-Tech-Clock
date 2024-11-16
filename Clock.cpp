@@ -58,13 +58,13 @@ void Clock::PrintClocks()
 	}
 	else if (hour == 0)
 	{
-		thour = 1;
+		thour = 12;
 	}
 	else
 	{
 		thour = hour;
 	}
-	std::string AMPM = (hour >= 12) ? "PM" : "AM";
+	std::string AMPM = (hour < 12) || (hour == 0) ? "AM" : "PM";
 
 	std::cout << "***************************" << "    " << "***************************" << std::endl;
 	std::cout << "*       12-Hour Clock     *" << "    " << "*       24-Hour Clock     *" << std::endl;

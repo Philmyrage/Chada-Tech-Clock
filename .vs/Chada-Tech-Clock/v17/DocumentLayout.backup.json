@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Phill\\OneDrive\\_SNHU\\_CS-210\\Module-3\\Chada-Tech-Clock\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{92101878-C252-4C3A-ACF3-4EF897D01544}|Chada-Tech-Clock.vcxproj|C:\\Users\\Phill\\OneDrive\\_SNHU\\_CS-210\\Module-3\\Chada-Tech-Clock\\Clock.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{92101878-C252-4C3A-ACF3-4EF897D01544}|Chada-Tech-Clock.vcxproj|solutionrelative:Clock.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{92101878-C252-4C3A-ACF3-4EF897D01544}|Chada-Tech-Clock.vcxproj|C:\\Users\\Phill\\OneDrive\\_SNHU\\_CS-210\\Module-3\\Chada-Tech-Clock\\Clock.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{92101878-C252-4C3A-ACF3-4EF897D01544}|Chada-Tech-Clock.vcxproj|solutionrelative:Clock.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92101878-C252-4C3A-ACF3-4EF897D01544}|Chada-Tech-Clock.vcxproj|C:\\Users\\Phill\\OneDrive\\_SNHU\\_CS-210\\Module-3\\Chada-Tech-Clock\\Clock.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{92101878-C252-4C3A-ACF3-4EF897D01544}|Chada-Tech-Clock.vcxproj|solutionrelative:Clock.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{92101878-C252-4C3A-ACF3-4EF897D01544}|Chada-Tech-Clock.vcxproj|C:\\Users\\Phill\\OneDrive\\_SNHU\\_CS-210\\Module-3\\Chada-Tech-Clock\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,25 +42,24 @@
               "RelativeToolTip": "main.cpp",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-16T14:48:48.622Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-16T14:48:48.622Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Clock.cpp",
               "DocumentMoniker": "C:\\Users\\Phill\\OneDrive\\_SNHU\\_CS-210\\Module-3\\Chada-Tech-Clock\\Clock.cpp",
               "RelativeDocumentMoniker": "Clock.cpp",
               "ToolTip": "C:\\Users\\Phill\\OneDrive\\_SNHU\\_CS-210\\Module-3\\Chada-Tech-Clock\\Clock.cpp",
               "RelativeToolTip": "Clock.cpp",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAAFQAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAYwD4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-16T13:46:10.369Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Clock.h",
               "DocumentMoniker": "C:\\Users\\Phill\\OneDrive\\_SNHU\\_CS-210\\Module-3\\Chada-Tech-Clock\\Clock.h",
               "RelativeDocumentMoniker": "Clock.h",
@@ -68,8 +67,7 @@
               "RelativeToolTip": "Clock.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-16T13:45:13.797Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-16T13:45:13.797Z"
             }
           ]
         }
