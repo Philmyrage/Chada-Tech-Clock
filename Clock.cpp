@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 
+
 void Clock::PrintMenu()
 {
 	std::cout << "******************************" << std::endl;
@@ -18,6 +19,7 @@ void Clock::PrintClock()
 {
 	std::cout << "***************************" << "    " << "***************************" << std::endl;
 	std::cout << "*       12-Hour Clock     *" << "    " << "*       24-Hour Clock     *" << std::endl;
+	std::cout << "*     " << hour << ":" << minute << ":" << second << "*" << "    " << "*" << ":" << ":" << "*" << std::endl;
 	std::cout << "***************************" << "    " << "***************************" << std::endl;
 }
 

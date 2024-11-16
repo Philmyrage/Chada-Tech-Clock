@@ -3,6 +3,11 @@ class Clock
 {
 
 public:
+	
+	//Constructor/Destructor to set default values and clean up.
+	Clock(int h, int m, int s) : hour(h), minute(m), second(s) {
+
+	}
 
 	//Class member modifier functions Getters/Setters
 	inline int GetHour() {return hour;}
