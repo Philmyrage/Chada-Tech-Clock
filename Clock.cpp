@@ -19,7 +19,8 @@ void Clock::PrintClock()
 {
 	std::cout << "***************************" << "    " << "***************************" << std::endl;
 	std::cout << "*       12-Hour Clock     *" << "    " << "*       24-Hour Clock     *" << std::endl;
-	std::cout << "*     " << hour << ":" << minute << ":" << second << "*" << "    " << "*" << ":" << ":" << "*" << std::endl;
+	std::cout << "*         " << hour << ":" << minute << ":" << second << "         *" << "    " << "*          " 
+	<< hour << ":" << minute << ":" << second << "        *" << std::endl;
 	std::cout << "***************************" << "    " << "***************************" << std::endl;
 }
 
