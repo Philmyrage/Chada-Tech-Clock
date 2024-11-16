@@ -14,16 +14,13 @@ void Clock::PrintMenu()
 	UserMenuSelection();
 }
 
-void Clock::Print12HourClock()
+void Clock::PrintClock()
 {
-	std::cout << "*******************************" << std::endl;
-	std::cout << "*      " << "12-Hour Clock" << "      *" << std::endl;
-	//std::cout << "*      " << (hour > 12) ? hour - 12 : hour << std::endl;
+	std::cout << "***************************" << "    " << "***************************" << std::endl;
+	std::cout << "*       12-Hour Clock     *" << "    " << "*       24-Hour Clock     *" << std::endl;
+	std::cout << "***************************" << "    " << "***************************" << std::endl;
 }
 
-void Clock::Print24HourClock()
-{
-}
 
 int Clock::UserMenuSelection()
 {

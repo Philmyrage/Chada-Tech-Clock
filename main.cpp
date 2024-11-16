@@ -11,6 +11,7 @@ int main() {
 
 	Clock* c = new Clock();
 
+	c->PrintClock();
 	c->PrintMenu();
 	
 	return 0;

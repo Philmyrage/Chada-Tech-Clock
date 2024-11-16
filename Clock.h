@@ -21,9 +21,7 @@ public:
 	//Print Functions
 	void PrintMenu();
 
-	void Print12HourClock();
-
-	void Print24HourClock();
+	void PrintClock();
 
 	//Input Functions
 	int UserMenuSelection();
