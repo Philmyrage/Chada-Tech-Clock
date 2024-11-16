@@ -1,4 +1,12 @@
 #pragma once
+
+/*
+	Created by: Phillip Wood
+	Date: 11/16/2024
+*/
+
+#include <vector>
+
 class Clock
 {
 
@@ -30,6 +38,10 @@ public:
 	void AddMinute(int minute); 
 	void AddSecond(int second);
 
+	//User Initial Values
+	void UserInitialValues();
+
+
 	//Print Functions
 	void PrintMenu();
 
@@ -43,6 +55,12 @@ public:
 
 	//This function validates the user input and also Executes the chosen operation based on input.
 	bool ValidateInputAndExecuteOperation(int input);
+
+	template<typename T>
+	inline bool ValidateIntegerInput(T input) { return (isdigit(input)); }
+
+	//returns true if the value is within range...
+	bool RangeCheck(int value, int min, int max);
 
 protected:
 	int hour = 0;
@@ -59,4 +77,3 @@ private:
 
 
 };
-

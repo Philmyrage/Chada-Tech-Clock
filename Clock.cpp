@@ -1,6 +1,13 @@
+/*
+	Created by: Phillip Wood
+	Date: 11/16/2024
+*/
+
 #include "Clock.h"
 #include <iostream>
 #include <string>
+#include <vector>
+#include <sstream>
 
 
 void Clock::AddHour(int hour)
@@ -34,6 +41,37 @@ void Clock::AddSecond(int second)
 		this->second = 0;
 		AddMinute(1);
 	}
+}
+
+void Clock::UserInitialValues()
+{
+	std::vector<int> values(3);
+	std::string input;
+
+	std::cout << "Enter: Hour(0-23) Minutes(1-59) Seconds(1-59) separated by space's" << std::endl;
+	std::getline(std::cin, input);
+	std::istringstream stream(input);
+
+	int num = 0;
+	int count = 0;
+	while (stream >> num)
+	{
+		values.at(count) = num;
+		count++;
+	}
+
+	if (RangeCheck(values.at(0), 0, 23) && RangeCheck(values.at(1), 1, 59) && RangeCheck(values.at(1), 1, 59))
+	{
+		SetHour(values.at(0));
+		SetMinute(values.at(1));
+		SetSecond(values.at(2));
+	}
+	else
+	{
+		std::cout << "Invalid Input, please try again." << std::endl;
+		UserInitialValues();
+	}
+
 }
 
 void Clock::PrintMenu()
@@ -116,4 +154,9 @@ bool Clock::ValidateInputAndExecuteOperation(int input)
 		std::cout << "Please input a valid selection" << std::endl;
 		return false;
 	}
+}
+
+bool Clock::RangeCheck(int value, int min, int max)
+{
+	return (value >= min) && (value <= max);
 }
