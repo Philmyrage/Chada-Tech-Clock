@@ -8,8 +8,8 @@ void Clock::AddHour(int hour)
 	//if hour exceeds 12 or 24 roll it over.
 	//easier to convert to 24 hour time here to do the calculation.
 	this->hour += hour;
-	if (hour > 23) {
-		hour = 0;
+	if (this->hour > 23) {
+		this->hour = 0;
 	}
 }
 
@@ -17,9 +17,9 @@ void Clock::AddMinute(int minute)
 {
 	this->minute += minute;
 	//if minute exceeds 59 roll it to zero and increment hour.
-	if (minute > 59) 
+	if (this->minute > 59) 
 	{
-		minute = 0;
+		this->minute = 0;
 		AddHour(1);
 	}
 }
@@ -29,9 +29,9 @@ void Clock::AddSecond(int second)
 	this->second += second;
 
 	//if second exceeds 59 roll it to zero and increment minute.
-	if (second > 59) 
+	if (this->second > 59) 
 	{
-		second = 0;
+		this->second = 0;
 		AddMinute(1);
 	}
 }
@@ -90,12 +90,15 @@ bool Clock::ValidateInputAndExecuteOperation(int input)
 	switch (input) 
 	{
 		case 1:
+		AddHour(1);
 		return true;
 
 		case 2:
+		AddMinute(1);
 		return true;
 
 		case 3:
+		AddSecond(1);
 		return true;
 
 		case 4:
