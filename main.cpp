@@ -20,7 +20,7 @@ int main() {
 	//Program loops until the user enters the sentinel value to stop executing.
 	//Created a quitValue class member cause "magic numbers" are bad, if more option are added it can easily be changed.
 	while (c->GetMenuSelection() != c->GetQuitOption()) {
-		c->PrintClock();
+		c->PrintClocks();
 		c->PrintMenu();
 	}
 	

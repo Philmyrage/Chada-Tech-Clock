@@ -4,8 +4,14 @@ class Clock
 
 public:
 	
-	//Constructor/Destructor to set default values and clean up.
-	Clock(int h, int m, int s) : hour(h), minute(m), second(s) {
+	Clock()
+	{
+
+	}
+
+	//Constructor override to set default values.
+	Clock(int h, int m, int s) : hour(h), minute(m), second(s) 
+	{
 
 	}
 
@@ -27,10 +33,15 @@ public:
 	//Print Functions
 	void PrintMenu();
 
-	void PrintClock();
+	//Prints the 12 and 24 hour clock times.
+	void PrintClocks();
 
 	//Input Functions
+
+	//Prints a selection line and gets the user input, it will loop until user chooses a correct option.
 	int UserMenuSelection();
+
+	//This function validates the user input and also Executes the chosen operation based on input.
 	bool ValidateInputAndExecuteOperation(int input);
 
 protected:

@@ -48,7 +48,7 @@ void Clock::PrintMenu()
 	UserMenuSelection();
 }
 
-void Clock::PrintClock()
+void Clock::PrintClocks()
 {
 	//Converting the time to twelve hour time in a temp variable and setting the time of day.
 	int thour = 0;
