@@ -71,6 +71,7 @@ void Clock::PrintClocks()
 	std::cout << "*         " << thour << ":" << minute << ":" << second << " " << AMPM << "     *" << "    " << "*          "
 	<< hour << ":" << minute << ":" << second << "       *" << std::endl;
 	std::cout << "***************************" << "    " << "***************************" << std::endl;
+	std::cout << std::endl << std::endl; //printing some empty lines for space...
 }
 
 int Clock::UserMenuSelection()
@@ -79,6 +80,7 @@ int Clock::UserMenuSelection()
 	{
 		std::cout << "Selection: ";
 		std::cin >> menuSelection;
+		std::cout << std::endl; // to separate from older selections.
 
 	}while(!ValidateInputAndExecuteOperation(menuSelection));
 
