@@ -5,9 +5,9 @@
 
 void Clock::AddHour(int hour)
 {
-	//if hour exceeds 12 or 24 roll it over.
-	//easier to convert to 24 hour time here to do the calculation.
+
 	this->hour += hour;
+	//if hour exceeds 23 roll it over.
 	if (this->hour > 23) {
 		this->hour = 0;
 	}
@@ -80,6 +80,12 @@ int Clock::UserMenuSelection()
 	{
 		std::cout << "Selection: ";
 		std::cin >> menuSelection;
+		//Handle non integer input!
+		if(std::cin.fail())
+		{
+			std::cin.clear();
+			std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+		}
 		std::cout << std::endl; // to separate from older selections.
 
 	}while(!ValidateInputAndExecuteOperation(menuSelection));
