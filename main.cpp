@@ -18,7 +18,7 @@ int main() {
 	Clock* c = new Clock(st.wHour, st.wMinute, st.wSecond);
 
 	//Program loops until the user enters the sentinel value to stop executing.
-	//Created a quitValue class member cause "magic numbers" are bad, if more option are added it can easily be changed.
+	//Created a quitValue class member cause "magic numbers" are bad, if more options are added it can easily be changed.
 	while (c->GetMenuSelection() != c->GetQuitOption()) {
 		c->PrintClocks();
 		c->PrintMenu();
