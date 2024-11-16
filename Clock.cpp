@@ -67,9 +67,9 @@ void Clock::PrintClocks()
 	std::string AMPM = (hour < 12) || (hour == 0) ? "AM" : "PM";
 
 	std::cout << "***************************" << "    " << "***************************" << std::endl;
-	std::cout << "*       12-Hour Clock     *" << "    " << "*       24-Hour Clock     *" << std::endl;
-	std::cout << "*         " << thour << ":" << minute << ":" << second << " " << AMPM << "     *" << "    " << "*          "
-	<< hour << ":" << minute << ":" << second << "       *" << std::endl;
+	std::cout << "       12-Hour Clock     " << "    " << "         24-Hour Clock     " << std::endl;
+	std::cout << "        " << thour << ":" << minute << ":" << second << " " << AMPM << "                      "
+	<< hour << ":" << minute << ":" << second << "       " << std::endl;
 	std::cout << "***************************" << "    " << "***************************" << std::endl;
 	std::cout << std::endl << std::endl; //printing some empty lines for space...
 }
