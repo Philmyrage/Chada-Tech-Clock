@@ -10,12 +10,19 @@
 
 int main() {
 
+	//Getting the current system time to initialize our clock object with current local time.
 	SYSTEMTIME st;
 	GetLocalTime(&st);
+
+	//Creating our clock object.
 	Clock* c = new Clock(st.wHour, st.wMinute, st.wSecond);
 
-	c->PrintClock();
-	c->PrintMenu();
+	//Program loops until the user enters the sentinel value to stop executing.
+	//Created a quitValue class member cause "magic numbers" are bad, if more option are added it can easily be changed.
+	while (c->GetMenuSelection() != c->GetQuitOption()) {
+		c->PrintClock();
+		c->PrintMenu();
+	}
 	
 	return 0;
 }

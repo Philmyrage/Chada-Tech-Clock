@@ -14,14 +14,15 @@ public:
 	inline int GetMinute() {return minute;}
 	inline int GetSecond() {return second;}
 	inline int GetMenuSelection() {return menuSelection;}
+	inline int GetQuitOption() {return quitOption;}
 
 	inline void SetHour(int hour) {this->hour = hour;}
 	inline void SetMinute(int minute) {this->minute = minute;}
 	inline void SetSecond(int second) {this->second = second;}
 
-	inline void AddHour(int hour) {this->hour += hour;}
-	inline void AddMinute(int minute) {this->minute += minute;}
-	inline void AddSecond(int second) {this->second += second;}
+	void AddHour(int hour);
+	void AddMinute(int minute); 
+	void AddSecond(int second);
 
 	//Print Functions
 	void PrintMenu();
@@ -30,7 +31,7 @@ public:
 
 	//Input Functions
 	int UserMenuSelection();
-	bool ValidateInput(int input);
+	bool ValidateInputAndExecuteOperation(int input);
 
 protected:
 	int hour = 0;
@@ -40,6 +41,8 @@ protected:
 	int second = 0;
 
 	int menuSelection = 0;
+
+	int quitOption = 4;
 
 private:
 
