@@ -11,7 +11,7 @@
 int main() {
 
 	SYSTEMTIME st;
-	GetSystemTime(&st);
+	GetLocalTime(&st);
 	Clock* c = new Clock(st.wHour, st.wMinute, st.wSecond);
 
 	c->PrintClock();
