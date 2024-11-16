@@ -17,10 +17,14 @@ void Clock::PrintMenu()
 
 void Clock::PrintClock()
 {
+
+	int thour;
+	std::string AMPM = (hour >= 12) ? "PM" : "AM";
+
 	std::cout << "***************************" << "    " << "***************************" << std::endl;
 	std::cout << "*       12-Hour Clock     *" << "    " << "*       24-Hour Clock     *" << std::endl;
-	std::cout << "*         " << hour << ":" << minute << ":" << second << "         *" << "    " << "*          " 
-	<< hour << ":" << minute << ":" << second << "        *" << std::endl;
+	std::cout << "*         " << hour << ":" << minute << ":" << second << " " << AMPM << "     *" << "    " << "*          "
+	<< hour << ":" << minute << ":" << second << "       *" << std::endl;
 	std::cout << "***************************" << "    " << "***************************" << std::endl;
 }
 
