@@ -1,5 +1,6 @@
 /*
 	Created by: Phillip Wood
+	GitHub: https://github.com/Philmyrage/Chada-Tech-Clock
 	Date: 11/16/2024
 */
 
@@ -48,7 +49,7 @@ void Clock::UserInitialValues()
 	std::vector<int> values(3);
 	std::string input;
 
-	std::cout << "Enter: Hour(0-23) Minutes(1-59) Seconds(1-59) separated by space's" << std::endl;
+	std::cout << "Enter: Hour(0-23) Minutes(0-59) Seconds(0-59) separated by space's" << std::endl;
 	std::getline(std::cin, input);
 	std::istringstream stream(input);
 
@@ -60,7 +61,7 @@ void Clock::UserInitialValues()
 		count++;
 	}
 
-	if (RangeCheck(values.at(0), 0, 23) && RangeCheck(values.at(1), 1, 59) && RangeCheck(values.at(1), 1, 59))
+	if (RangeCheck(values.at(0), 0, 23) && RangeCheck(values.at(1), 0, 59) && RangeCheck(values.at(1), 0, 59))
 	{
 		SetHour(values.at(0));
 		SetMinute(values.at(1));

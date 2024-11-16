@@ -1,9 +1,9 @@
 /*
 	Created by: Phillip Wood
+	GitHub: https://github.com/Philmyrage/Chada-Tech-Clock
 	Date: 11/16/24
 */
 
-#include <Windows.h>
 #include <iostream>
 #include "Clock.h"
 
@@ -11,15 +11,6 @@
 
 
 int main() {
-
-	//Getting the current system time to initialize our clock object with current local time.
-	SYSTEMTIME st;
-	GetLocalTime(&st);
-
-	//Change to user input to create our clock with initial values.
-
-	//Creating our clock object.
-	//Clock* c = new Clock(st.wHour, st.wMinute, st.wSecond);
 	
 	Clock* c = new Clock();
 	c->UserInitialValues();
